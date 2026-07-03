@@ -1,0 +1,23 @@
+{
+  "name": "TntsPlay",
+  "short_name": "TntsPlay",
+  "description": "Plataforma de streaming para clientes finais e revendedores autorizados.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#030711",
+  "theme_color": "#030711",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

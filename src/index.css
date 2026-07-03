@@ -1,0 +1,276 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #030711;
+  --primary: #00e5ff;
+  --secondary: #008cff;
+  --text: #ffffff;
+  --muted: #aeb9d1;
+  --border: rgba(0, 229, 255, 0.22);
+  --card: rgba(5, 18, 32, 0.82);
+  --glow: 0 0 22px rgba(0, 229, 255, 0.45);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+
+.background-grid {
+  position: fixed;
+  inset: 0;
+  z-index: -5;
+  background-image:
+    linear-gradient(rgba(0, 229, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 229, 255, 0.05) 1px, transparent 1px);
+  background-size: 70px 70px;
+}
+
+.light-left,
+.light-right {
+  position: fixed;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  filter: blur(140px);
+  z-index: -4;
+}
+
+.light-left {
+  top: -180px;
+  left: -180px;
+  background: rgba(0, 229, 255, 0.18);
+}
+
+.light-right {
+  right: -180px;
+  bottom: -180px;
+  background: rgba(0, 140, 255, 0.22);
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 70px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
+  margin: 0 auto 28px;
+}
+
+.hero-tag {
+  display: inline-flex;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  background: rgba(0, 229, 255, 0.06);
+}
+
+.hero h1 {
+  font-size: clamp(44px, 7vw, 92px);
+  line-height: 0.95;
+  font-weight: 950;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.hero h1 span {
+  color: var(--primary);
+  text-shadow: var(--glow);
+}
+
+.subtitle {
+  max-width: 760px;
+  margin: 28px auto 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  height: 62px;
+  min-width: 230px;
+  padding: 0 28px;
+  border-radius: 18px;
+  font-size: 15px;
+  font-weight: 850;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: 0.25s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #001018;
+  box-shadow: var(--glow);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+  border: 1px solid var(--border);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-4px);
+}
+
+.glass {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  backdrop-filter: blur(24px);
+}
+
+.hero-stats {
+  margin: 55px auto 0;
+  padding: 22px;
+  max-width: 1000px;
+}
+
+.hero-stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.hero-stat-box {
+  height: 115px;
+  border-radius: 20px;
+  background: rgba(0, 229, 255, 0.055);
+  border: 1px solid rgba(0, 229, 255, 0.16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-stat-box strong {
+  color: var(--primary);
+  font-size: 30px;
+  font-weight: 950;
+  line-height: 1;
+  text-shadow: var(--glow);
+}
+
+.hero-stat-box span {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.8);
+  opacity: 0.35;
+}
+
+.p1 {
+  width: 14px;
+  height: 14px;
+  left: 8%;
+  top: 24%;
+}
+
+.p2 {
+  width: 10px;
+  height: 10px;
+  right: 14%;
+  top: 31%;
+}
+
+.p3 {
+  width: 18px;
+  height: 18px;
+  left: 19%;
+  bottom: 23%;
+}
+
+.p4 {
+  width: 12px;
+  height: 12px;
+  right: 19%;
+  bottom: 20%;
+}
+
+@media (max-width: 900px) {
+  .hero-stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    letter-spacing: -1px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+
+  .hero-stats-row {
+    grid-template-columns: 1fr;
+  }
+}
