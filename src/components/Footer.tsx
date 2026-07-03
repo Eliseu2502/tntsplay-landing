@@ -1,5 +1,3 @@
-import { FaWhatsapp, FaInstagram } from "react-icons/fa";
-
 export default function Footer() {
   return (
     <footer
@@ -11,51 +9,33 @@ export default function Footer() {
       <div className="container">
         <div
           style={{
+            width: "100%",
             display: "flex",
-            justifyContent: "space-between",
+            flexDirection: "column",
             alignItems: "center",
-            flexWrap: "wrap",
-            gap: "30px",
+            textAlign: "center",
           }}
         >
-          <div
-  style={{
-    width: "100%",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    textAlign: "center",
-  }}
->
-  <img
-    src="/logo.png"
-    alt="TntsPlay"
-    style={{
-      width: 170,
-      marginBottom: 20,
-    }}
-  />
-
-  <p
-    style={{
-      color: "#AEB9D1",
-      maxWidth: 700,
-      lineHeight: 1.8,
-      margin: "0 auto",
-    }}
-  >
-    Plataforma moderna desenvolvida para oferecer uma experiência completa
-    para clientes e revendedores.
-  </p>
-</div>
-          <div
+          <img
+            src="/logo.png"
+            alt="TntsPlay"
             style={{
-              display: "flex",
-              gap: 15,
+              width: 170,
+              marginBottom: 20,
+            }}
+          />
+
+          <p
+            style={{
+              color: "#AEB9D1",
+              maxWidth: 700,
+              lineHeight: 1.8,
+              margin: "0 auto",
             }}
           >
-                  
-          </div>
+            Plataforma moderna desenvolvida para oferecer uma experiência
+            completa para clientes e revendedores.
+          </p>
         </div>
 
         <div
