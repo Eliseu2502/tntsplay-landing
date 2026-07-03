@@ -1,11 +1,5 @@
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
-const WHATSAPP =
-  "https://wa.me/5519999999999?text=Olá! Quero conhecer a TntsPlay.";
-
-const INSTAGRAM =
-  "https://instagram.com/tntsplay";
-
 export default function Footer() {
   return (
     <footer
