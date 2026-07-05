@@ -1,32 +1,37 @@
 import Hero from "./components/Hero/Hero";
-import Benefits from "./components/Benefits.tsx";
-import HowItWorks from "./components/HowItWorks.tsx";
-import Audience from "./components/Audience.tsx";
-import Faq from "./components/Faq.tsx";
-import Footer from "./components/Footer.tsx";
+import Benefits from "./components/Benefits";
+import HowItWorks from "./components/HowItWorks";
+import Audience from "./components/Audience";
+import Faq from "./components/Faq";
+import Footer from "./components/Footer";
+import BlogPage from "./blog/BlogPage";
+import PostPage from "./blog/PostPage";
 
-function App() {
+function HomePage() {
   return (
     <>
-      <div className="background-grid"></div>
-
-      <div className="light-left"></div>
-
-      <div className="light-right"></div>
-
       <Hero />
-
       <Benefits />
-
       <HowItWorks />
-
       <Audience />
-
       <Faq />
-
       <Footer />
     </>
   );
+}
+
+function App() {
+  const path = window.location.pathname;
+
+  if (path === "/blog") {
+    return <BlogPage />;
+  }
+
+  if (path.startsWith("/blog/")) {
+    return <PostPage />;
+  }
+
+  return <HomePage />;
 }
 
 export default App;

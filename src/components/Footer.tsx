@@ -17,7 +17,6 @@ export default function Footer() {
           }}
         >
          
-
           <p
             style={{
               color: "#AEB9D1",
