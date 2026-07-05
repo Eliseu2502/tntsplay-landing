@@ -16,14 +16,7 @@ export default function Footer() {
             textAlign: "center",
           }}
         >
-          <img
-            src="/logo.png"
-            alt="TntsPlay"
-            style={{
-              width: 170,
-              marginBottom: 20,
-            }}
-          />
+         
 
           <p
             style={{

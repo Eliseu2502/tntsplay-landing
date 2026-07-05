@@ -11,6 +11,12 @@
       content="TntsPlay é uma plataforma de streaming para clientes finais e revendedores autorizados, com ativação rápida, suporte direto e experiência premium."
     />
 
+    <meta
+      name="keywords"
+      content="streaming, plataforma de streaming, IPTV, revenda IPTV, revendedor IPTV, TntsPlay"
+    />
+
+    <meta name="author" content="TntsPlay" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#030711" />
 
@@ -19,31 +25,115 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/logo.png" />
 
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="TntsPlay | Streaming para Clientes e Revendedores" />
-    <meta property="og:description" content="Plataforma moderna de streaming para clientes finais e revendedores autorizados." />
+    <meta
+      property="og:description"
+      content="Plataforma moderna de streaming para clientes finais e revendedores autorizados."
+    />
     <meta property="og:url" content="https://tntsplay.com/" />
     <meta property="og:site_name" content="TntsPlay" />
     <meta property="og:image" content="https://tntsplay.com/og-image.jpg" />
     <meta property="og:locale" content="pt_BR" />
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="TntsPlay | Streaming para Clientes e Revendedores" />
-    <meta name="twitter:description" content="Plataforma moderna de streaming para clientes finais e revendedores autorizados." />
-    <meta name="twitter:image" content="https://tntsplay.com/og-image.jpg" />
+    <meta
+      name="twitter:title"
+      content="TntsPlay | Streaming para Clientes e Revendedores"
+    />
+    <meta
+      name="twitter:description"
+      content="Plataforma moderna de streaming para clientes finais e revendedores autorizados."
+    />
+    <meta
+      name="twitter:image"
+      content="https://tntsplay.com/og-image.jpg"
+    />
 
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-02Y99HHNR0"></script>
+    <!-- Google Tag Manager -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag("js", new Date());
-      gtag("config", "G-02Y99HHNR0");
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-T3Z52FT4');
     </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://tntsplay.com/#organization",
+            "name": "TntsPlay",
+            "url": "https://tntsplay.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://tntsplay.com/logo.png"
+            },
+            "image": "https://tntsplay.com/logo.png",
+            "description": "Plataforma de streaming para clientes finais e revendedores autorizados.",
+            "telephone": "+55 11 92203-4310",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+55 11 92203-4310",
+                "contactType": "customer support",
+                "availableLanguage": "pt-BR"
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+44 7832 818548",
+                "contactType": "sales",
+                "availableLanguage": "pt-BR"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://tntsplay.com/#website",
+            "url": "https://tntsplay.com",
+            "name": "TntsPlay",
+            "publisher": {
+              "@id": "https://tntsplay.com/#organization"
+            }
+          },
+          {
+            "@type": "Service",
+            "@type": "Service",
+            "name": "Streaming Premium",
+            "provider": {
+              "@id": "https://tntsplay.com/#organization"
+            },
+            "areaServed": "BR"
+          }
+        ]
+      }
+    </script>
+
   </head>
 
   <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T3Z52FT4"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden">
+      </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div id="root"></div>
+
     <script type="module" src="/src/main.tsx"></script>
+
   </body>
 </html>
