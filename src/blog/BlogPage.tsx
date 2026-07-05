@@ -1,11 +1,13 @@
 import { postStreaming2026 } from "./posts/streaming-2026";
 import { post } from "./posts/o-que-e-streaming";
 import { postStreamingLegal } from "./posts/streaming-autorizado-e-legal";
+import { postEscolherPlataforma } from "./posts/como-escolher-uma-plataforma-de-streaming";
 
 const posts = [
   postStreaming2026,
   post,
   postStreamingLegal,
+  postEscolherPlataforma,
 ];
 
 export default function BlogPage() {
