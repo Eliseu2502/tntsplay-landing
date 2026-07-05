@@ -1,6 +1,12 @@
 import { postStreaming2026 } from "./posts/streaming-2026";
+import { post } from "./posts/o-que-e-streaming";
+import { postStreamingLegal } from "./posts/streaming-autorizado-e-legal";
 
-const posts = [postStreaming2026];
+const posts = [
+  postStreaming2026,
+  post,
+  postStreamingLegal,
+];
 
 export default function BlogPage() {
   return (
