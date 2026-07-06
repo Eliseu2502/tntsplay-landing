@@ -109,7 +109,7 @@ export default function PostPage() {
             marginTop: 55,
           }}
         >
-          {post.content.map((section) => (
+          {post.content.map((section: { heading: string; text: string }) => (
             <section
               key={section.heading}
               style={{
