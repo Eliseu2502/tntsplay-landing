@@ -1,18 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<urlset
-xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
+  <url>
+    <loc>https://tntsplay.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-<loc>https://tntsplay.com/</loc>
+  <url>
+    <loc>https://tntsplay.com/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-<lastmod>2026-07-03</lastmod>
+  <url>
+    <loc>https://tntsplay.com/blog/streaming-2026</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<changefreq>daily</changefreq>
+  <url>
+    <loc>https://tntsplay.com/blog/o-que-e-streaming</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<priority>1.0</priority>
+  <url>
+    <loc>https://tntsplay.com/blog/streaming-autorizado-e-legal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-</url>
+  <url>
+    <loc>https://tntsplay.com/blog/como-escolher-uma-plataforma-de-streaming</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tntsplay.com/blog/o-que-faz-um-revendedor-de-streaming</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tntsplay.com/blog/streaming-x-tv-tradicional</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tntsplay.com/blog/futuro-do-streaming</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tntsplay.com/blog/como-ganhar-dinheiro-revendendo-streaming</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tntsplay.com/blog/vale-a-pena-ser-revendedor-de-streaming</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tntsplay.com/blog/como-conseguir-clientes-para-revenda</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tntsplay.com/blog/como-vender-assinaturas-de-streaming</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tntsplay.com/blog/como-montar-um-negocio-de-revenda</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tntsplay.com/blog/erros-que-todo-revendedor-iniciante-comete</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tntsplay.com/blog/como-fidelizar-clientes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tntsplay.com/blog/estrategias-de-marketing-para-revendedores</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tntsplay.com/blog/quanto-ganha-um-revendedor-de-streaming</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tntsplay.com/blog/como-escalar-um-negocio-de-revenda</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>
