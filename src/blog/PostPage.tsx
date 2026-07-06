@@ -1,7 +1,8 @@
 import { postStreaming2026 } from "./posts/streaming-2026";
-import { post } from "./posts/o-que-e-streaming.ts";
+import { post } from "./posts/o-que-e-streaming";
 import { postStreamingLegal } from "./posts/streaming-autorizado-e-legal";
 import { postEscolherPlataforma } from "./posts/como-escolher-uma-plataforma-de-streaming";
+
 const posts = [
   postStreaming2026,
   post,
@@ -22,19 +23,8 @@ export default function PostPage() {
         padding: "80px 20px",
       }}
     >
-      <article
-        style={{
-          maxWidth: 900,
-          margin: "0 auto",
-        }}
-      >
-        <a
-          href="/blog"
-          style={{
-            color: "#00e5ff",
-            fontWeight: 800,
-          }}
-        >
+      <article style={{ maxWidth: 900, margin: "0 auto" }}>
+        <a href="/blog" style={{ color: "#00e5ff", fontWeight: 800 }}>
           ← Voltar ao blog
         </a>
 
@@ -72,25 +62,10 @@ export default function PostPage() {
           {post.excerpt}
         </p>
 
-        <div
-          style={{
-            marginTop: 55,
-          }}
-        >
+        <div style={{ marginTop: 55 }}>
           {post.content.map((section) => (
-            <section
-              key={section.heading}
-              style={{
-                marginBottom: 45,
-              }}
-            >
-              <h2
-                style={{
-                  fontSize: 30,
-                  marginBottom: 16,
-                  color: "#ffffff",
-                }}
-              >
+            <section key={section.heading} style={{ marginBottom: 45 }}>
+              <h2 style={{ fontSize: 30, marginBottom: 16 }}>
                 {section.heading}
               </h2>
 
@@ -110,13 +85,14 @@ export default function PostPage() {
         <section
           style={{
             marginTop: 60,
-            padding: 32,
+            padding: 34,
             borderRadius: 24,
-            border: "1px solid rgba(0,229,255,.22)",
-            background: "rgba(0,229,255,.055)",
+            border: "1px solid rgba(0,229,255,.28)",
+            background: "rgba(0,229,255,.07)",
+            textAlign: "center",
           }}
         >
-          <h2>Conheça a TntsPlay</h2>
+          <h2 style={{ fontSize: 32 }}>Conheça a TntsPlay</h2>
 
           <p
             style={{
@@ -126,21 +102,47 @@ export default function PostPage() {
               fontSize: 18,
             }}
           >
-            Se você procura uma plataforma moderna para clientes finais ou
-            deseja iniciar como revendedor autorizado, conheça a TntsPlay.
+            Plataforma moderna para clientes finais e revendedores autorizados.
+            Acesse a página principal e escolha a melhor opção para você.
           </p>
 
-          <a
-            href="/"
+          <div
             style={{
-              display: "inline-block",
-              marginTop: 22,
-              color: "#00e5ff",
-              fontWeight: 900,
+              display: "flex",
+              justifyContent: "center",
+              flexWrap: "wrap",
+              gap: 16,
+              marginTop: 28,
             }}
           >
-            Acessar página principal →
-          </a>
+            <a
+              href="/"
+              style={{
+                padding: "16px 26px",
+                borderRadius: 14,
+                background: "#00e5ff",
+                color: "#030711",
+                fontWeight: 900,
+                textDecoration: "none",
+              }}
+            >
+              Ir para a Landing Page
+            </a>
+
+            <a
+              href="/"
+              style={{
+                padding: "16px 26px",
+                borderRadius: 14,
+                border: "1px solid rgba(0,229,255,.45)",
+                color: "#00e5ff",
+                fontWeight: 900,
+                textDecoration: "none",
+              }}
+            >
+              Ver opções para Revenda
+            </a>
+          </div>
         </section>
       </article>
     </main>
